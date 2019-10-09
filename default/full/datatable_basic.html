@@ -530,13 +530,14 @@
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Horizontal form</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Altas y bajas</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
 						<!-- /forms -->
 
 						<!-- Components -->
+						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid"></i> <span>Basic components</span></a>
@@ -639,9 +640,11 @@
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
 						</li>
+						</-- >
 						<!-- /components -->
 
 						<!-- Layout -->
+						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack2"></i> <span>Page layouts</span></a>
@@ -804,9 +807,11 @@
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
 						</li>
+						</-- >
 						<!-- /layout -->
 
 						<!-- Data visualization -->
+						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Data visualization</div> <i class="icon-menu" title="Data visualization"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-graph"></i> <span>Echarts library</span></a>
@@ -911,6 +916,7 @@
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
+						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Extensions</div> <i class="icon-menu" title="Extensions"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-puzzle4"></i> <span>Extensions</span></a>
@@ -956,6 +962,8 @@
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
 						</li>
+						</-- >
+
 						<!-- /extensions -->
 
 						<!-- Tables -->
@@ -973,7 +981,7 @@
 						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Basic initialization</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Consultas</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
 								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
 								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
@@ -1028,6 +1036,7 @@
 						<!-- /tables -->
 
 						<!-- Page kits -->
+						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Page kits</div> <i class="icon-menu" title="Page kits"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid6"></i> <span>General pages</span></a>
@@ -1189,6 +1198,7 @@
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
+						</-- >
 						<!-- /page kits -->
 
 					</ul>
@@ -1280,19 +1290,27 @@
 					<div class="card-body">
 						The <code>DataTables</code> is a highly flexible tool, based upon the foundations of progressive enhancement, and will add advanced interaction controls to any HTML table. DataTables has most features enabled by default, so all you need to do to use it with your own tables is to call the construction function. Searching, ordering, paging etc goodness will be immediately added to the table, as shown in this example. <strong>Datatables support all available table styling.</strong>
 					</div>
+                    <div>
 
 					<table class="table datatable-basic">
+
 						<thead>
+							<center><h1>Alumnos</h1></center>
 							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
+								<th>Matricula</th>
+								<th>Nombre</th>
+								<th>Apellidos</th>
+								<th>Contraseña</th>
+								<th>Genero</th>
+								<th>Correo electronico</th>
+								<th>Numero telefonico</th>
+								<th>Nacionalidad</th>
+								<th>Direccion</th>
 								<th class="text-center">Actions</th>
 							</tr>
 						</thead>
 						<tbody>
+							
 							<tr>
 								<td>Marth</td>
 								<td><a href="#">Enright</a></td>
@@ -1624,6 +1642,7 @@
 								</td>
 							</tr>
 						</tbody>
+						
 					</table>
 				</div>
 				<!-- /basic datatable -->

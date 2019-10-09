@@ -530,7 +530,7 @@
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link active">Horizontal form</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link active">Altas y bajas</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
@@ -983,7 +983,7 @@
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Basic initialization</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Consultas</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
 								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
 								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
@@ -1283,7 +1283,7 @@
 						<!-- Basic layout-->
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h5 class="card-title">Alumno</h5>
+								<h5 class="card-title">Dar de alta a un alumno</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1451,7 +1451,74 @@
 						<!-- /basic layout -->
 
 					</div>
+<div class="col-md-6">
 
+						<!-- Basic layout-->
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Dar de baja a un alumno</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Matricula:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la matricula del estudiante" id="matricula">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Correo electronico:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el correo electronico"
+											id="correo">
+										</div>
+									</div>
+
+									
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Genero:</label>
+										<div class="col-lg-9">
+											<div class="form-check form-check-inline">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" name="gender" checked data-fouc>
+													Hombre
+												</label>
+											</div>
+
+											<div class="form-check form-check-inline">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" name="gender" data-fouc>
+													Mujer
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Nacionalidad:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese su nacionalidad" id="nacionalidad">
+										</div>
+									</div>
+									
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- /basic layout -->
+
+					</div>
 					<div class="col-md-6">
 
 						<!-- Static mode -->
