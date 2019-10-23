@@ -412,46 +412,48 @@
 							</a>
 						</li>
 
+							</li>
 							<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php" class="nav-link active">Alta</a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php " class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/consultaAlumnos.php" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/rutas.html" class="nav-link ">rutas </a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Maestros</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaMaestros.php" class="nav-link active">Alta</a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaMaestros.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/consultaMaestros.php" class="nav-link ">Consultar </a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Materias</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaMaterias.php" class="nav-link active">Alta</a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaMaterias.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/consultaMaterias.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>
+						</li>	
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Carreras</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
 								<li class="nav-item"><a href="../../../LTR/default/full/altaCarreras.php" class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/consultaCarreras.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>
+						</li>	
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Tutorias</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
 								<li class="nav-item"><a href="../../../LTR/default/full/altaTutorias.php" class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/consultaTutorias.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>
+						</li>	
 						<!-- >
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>

@@ -23,15 +23,12 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/components_modals.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -41,7 +38,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-			<a href="index.html" class="d-inline-block">
+			<a href="index2.php" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -407,12 +404,22 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
+							<a href="index2.php" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
+						</li>
+<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php " class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/rutas.html" class="nav-link ">rutas </a></li>
+							</ul>
 						</li>
 							<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
@@ -454,12 +461,23 @@
 								<li class="nav-item"><a href="../../../LTR/default/full/altaTutorias.php" class="nav-link active">Alta </a></li>
 								<li class="nav-item"><a href="../../../LTR/default/full/consultaTutorias.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>	
-									<!-- >	
+						</li>				
+						<!-- >
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>
+								<li class="nav-item"><a href="../../../../layout_2/LTR/default/full/index.html" class="nav-link">Layout 2</a></li>
+								<li class="nav-item"><a href="../../../../layout_3/LTR/default/full/index.html" class="nav-link">Layout 3</a></li>
+								<li class="nav-item"><a href="../../../../layout_4/LTR/default/full/index.html" class="nav-link">Layout 4</a></li>
+								<li class="nav-item"><a href="../../../../layout_5/LTR/default/full/index.html" class="nav-link">Layout 5</a></li>
+								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
-							
-	
+
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
 								<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>
 								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">Material</a></li>
@@ -467,10 +485,6 @@
 								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						</-- >
-
-						
-						<!-- >
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
 
@@ -514,13 +528,13 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
-						</-- >
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li
+						</-->
 						<!-- /main -->
 
-						<!-- Formularios -->
+						<!-- Forms -->
 						<!-- >
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div>Formularios <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
@@ -570,16 +584,14 @@
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Altas</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Altas y bajas</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
 						</-- >
-						<!-- /formularios -->
+						<!-- /forms -->
 
-						
-
-						<!-- componentes -->
+						<!-- Components -->
 						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
@@ -683,9 +695,9 @@
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
 						</li>
-						</-->
-						<!-- componentes -->
-						
+						</-- >
+						<!-- /components -->
+
 						<!-- Layout -->
 						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
@@ -850,7 +862,7 @@
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
 						</li>
-						</-->
+						</-- >
 						<!-- /layout -->
 
 						<!-- Data visualization -->
@@ -956,7 +968,6 @@
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						</-->
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
@@ -1006,12 +1017,13 @@
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
 						</li>
-						</-->
+						</-- >
+
 						<!-- /extensions -->
 
 						<!-- Tables -->
 						<!-- >
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Consultar</div> <i class="icon-menu" title="Tables"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
@@ -1022,10 +1034,10 @@
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Consultas</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Consultas</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
 								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
 								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
@@ -1077,7 +1089,7 @@
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
 						</li>
-						</-- >
+						</-- >a
 						<!-- /tables -->
 
 						<!-- Page kits -->
@@ -1243,7 +1255,7 @@
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						</-->
+						</-- >
 						<!-- /page kits -->
 
 					</ul>
@@ -1255,7 +1267,344 @@
 			
 		</div>
 		<!-- /main sidebar -->
+<!-- Basic modal -->
+				<div id="modal_default" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
 
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Apellidos:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese los Apellidos " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Contraseña " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Genero:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el genero " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Correo electronico:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el correo electronico " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">numero telefonico:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el numero telefonico " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Nacionalidad:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Nacionalidad " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Dirrecion:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Direccion " id="Nombre">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
+				<div id="modal_carreras" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Descripcion:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la descripcion " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Grupo:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Grupo " id="Grupo">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
+				<div id="modal_maestros" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Apellidos:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese los Apellidos " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Contraseña " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Genero:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el genero " id="Genero">
+										</div>
+										<label class="col-lg-3 col-form-label">Correo electronico:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el correo electronico " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Numero telefonico:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el numero telefonico " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Profesion:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Profesion " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Contacto:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el contacto " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Carrera:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la carrera " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Materias a impartir:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese las materias a impartir " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Grupo:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Grupo " id="Grupo">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
+				<div id="modal_tutorias" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre alumno:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Matricula:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Matricula " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Carrera:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la carrera " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre maestro:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el nombre " id="Genero">
+										</div>
+										<label class="col-lg-3 col-form-label">Numero de empleado:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el numero de empleado " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Carrera:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la carrera telefonico " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Fecha:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="mm/dd/yyyy " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Tema:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el tema " id="Grupo">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
+				<div id="modal_materia" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Descripcion:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la descripcion " id="Nombre">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
+				<div id="modal_profesor" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Descripcion:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la descripcion " id="Nombre">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+
+
+
+				<!-- Basic modal -->
+				<div id="modal_delete" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Borrar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+								<div class="modal-body">
+								<p>Se borro con exito la informacion selecionada</p>
+
+								<hr>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
 
 		<!-- Main content -->
 		<div class="content-wrapper">
@@ -1264,7 +1613,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Menu</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Basic</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1280,8 +1629,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<span class="breadcrumb-item active">Dashboard</span>
+							<a href="index2.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
+							<span class="breadcrumb-item active">Basic</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1315,630 +1665,854 @@
 			<!-- /page header -->
 
 
-			<!-- Content area -->
-			<div class="content">
+		
 
-				<!-- Main charts -->
-				<div class="row">
-					<div class="col-xl-7">
+			<!-- Pagination types -->
+				<div class="content">
 
-						<!-- Traffic sources -->
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Traffic sources</h6>
-								<div class="header-elements">
-									<div class="form-check form-check-right form-check-switchery form-check-switchery-sm">
-										<label class="form-check-label">
-											Live update:
-											<input type="checkbox" class="form-input-switchery" checked data-fouc>
-										</label>
-									</div>
-								</div>
-							</div>
+				<div class="card">
+					
+					<div style="overflow: auto;">
 
-							<div class="card-body py-0">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon mr-3">
-												<i class="icon-plus3"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">New visitors</div>
-												<span class="text-muted">2,349 avg</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
-									</div>
-
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3">
-												<i class="icon-watch2"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">New sessions</div>
-												<span class="text-muted">08:20 avg</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
-									</div>
-
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon mr-3">
-												<i class="icon-people"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">Total online</div>
-												<span class="text-muted"><span class="badge badge-mark border-success mr-2"></span> 5,378 avg</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="total-online"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="chart position-relative" id="traffic-sources"></div>
-						</div>
-						<!-- /traffic sources -->
-
-					</div>
-
-					<div class="col-xl-5">
-
-						<!-- Progress counters -->
-						<div class="row">
-							<div class="col-sm-6">
-
-								<!-- Available hours -->
-								<div class="card text-center">
-									<div class="card-body">
-
-					                	<!-- Progress counter -->
-										<div class="svg-center position-relative" id="hours-available-progress"></div>
-										<!-- /progress counter -->
-
-
-										<!-- Bars -->
-										<div id="hours-available-bars"></div>
-										<!-- /bars -->
-
-									</div>
-								</div>
-								<!-- /available hours -->
-
-							</div>
-
-							<div class="col-sm-6">
-
-								<!-- Productivity goal -->
-								<div class="card text-center">
-									<div class="card-body">
-
-										<!-- Progress counter -->
-										<div class="svg-center position-relative" id="goal-progress"></div>
-										<!-- /progress counter -->
-
-										<!-- Bars -->
-										<div id="goal-bars"></div>
-										<!-- /bars -->
-
-									</div>
-								</div>
-								<!-- /productivity goal -->
-
-							</div>
-						</div>
-						<!-- /progress counters -->
-
-					</div>
-				</div>
-				<!-- /main charts -->
-
-
-				<!-- Dashboard content -->
-				<div class="row">
-
-					<div class="col-xl-8">
-
-						
-
-
-						<!-- Quick stats boxes -->
-						<div class="row">
-							<div class="col-lg-4">
-
-								<!-- Members online -->
-								<div class="card bg-teal-400">
-									<div class="card-body">
-										<div class="d-flex">
-											<h3 class="font-weight-semibold mb-0">3,450</h3>
-											<span class="badge bg-teal-800 badge-pill align-self-center ml-auto">+53,6%</span>
-					                	</div>
-					                	
-					                	<div>
-											Members online
-											<div class="font-size-sm opacity-75">489 avg</div>
-										</div>
-									</div>
-
-									<div class="container-fluid">
-										<div id="members-online"></div>
-									</div>
-								</div>
-								<!-- /members online -->
-
-							</div>
-
-							<div class="col-lg-4">
-
-								<!-- Current server load -->
-								<div class="card bg-pink-400">
-									<div class="card-body">
-										<div class="d-flex">
-											<h3 class="font-weight-semibold mb-0">49.4%</h3>
-											<div class="list-icons ml-auto">
-						                		<div class="list-icons-item dropdown">
-						                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
-													<div class="dropdown-menu dropdown-menu-right">
-														<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
-														<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
-														<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
-														<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
-													</div>
-						                		</div>
-					                		</div>
-					                	</div>
-					                	
-					                	<div>
-											Current server load
-											<div class="font-size-sm opacity-75">34.6% avg</div>
-										</div>
-									</div>
-
-									<div id="server-load"></div>
-								</div>
-								<!-- /current server load -->
-
-							</div>
-
-							<div class="col-lg-4">
-
-
-							</div>
-						</div>
-						<!-- /quick stats boxes -->
-
-
-
-
-						<!-- Latest posts -->
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Latest posts</h6>
-								<div class="header-elements">
+					<table class="table datatable-pagination" width="100%">
+						<thead>
+							<center><h1>Tutorias</h1></center>
+							<tr>
+								<th>ID</th>
+								<th>Nombre alumno</th>
+								<th>Matricula</th>
+								<th>Carrera</th>
+								<th>Nombre maestro</th>
+								<th>Numero de empleado</th>
+								<th>Carrera</th>
+								<th>Fecha</th>
+								<th>Tema</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mario Carlos </td>
+								<td>136547</td>
+								<td>ITI</td>
+								<td>Mario Humberto</td>
+								<td>26</td>
+								<td>ITI</td>
+								<td>26/5/2017</td>
+								<td>Componentes de una computadora</td>
+								<td class="text-center">
 									<div class="list-icons">
-				                		<a class="list-icons-item" data-action="collapse"></a>
-				                		<a class="list-icons-item" data-action="reload"></a>
-				                		<a class="list-icons-item" data-action="remove"></a>
-				                	</div>
-			                	</div>
-		                	</div>
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-							<div class="card-body pb-0">
-								<div class="row">
-									<div class="col-xl-6">
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Up unpacked friendly</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
-					                    		</ul>
-												The him father parish looked has sooner. Attachment frequently terminated son hello...
-											</div>
-										</div>
-
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">It allowance prevailed</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
-					                    		</ul>
-												Alteration literature to or an sympathize mr imprudence. Of is ferrars subject enjoyed...
+											<div class="dropdown-menu dropdown-menu-right">
+												<li>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												</li>
 											</div>
 										</div>
 									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Juan Carlos </td>
+								<td>136545</td>
+								<td>ITI</td>
+								<td>Omar Jasso</td>
+								<td>25</td>
+								<td>ITI</td>
+								<td>24/4/2017</td>
+								<td>Ciclos</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-									<div class="col-xl-6">
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Case read they must</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
-					                    		</ul>
-												On it differed repeated wandered required in. Then girl neat why yet knew rose spot...
-											</div>
-										</div>
-
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Too carriage attended</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> FAQ section</li>
-					                    		</ul>
-												Marianne or husbands if at stronger ye. Considered is as middletons uncommonly...
+											<div class="dropdown-menu dropdown-menu-right">
+												<li>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												</li>
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /latest posts -->
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Leonardo David </td>
+								<td>136534</td>
+								<td>ITI</td>
+								<td>Mario Humberto</td>
+								<td>26</td>
+								<td>ITI</td>
+								<td>27/5/2017</td>
+								<td>Word press</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
 
-					</div>
-
-					<div class="col-xl-4">
-
-						
-
-
-
-
-						<!-- My messages -->
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">My messages</h6>
-								<div class="header-elements">
-									<span><i class="icon-history text-warning mr-2"></i> Jul 7, 10:30</span>
-									<span class="badge bg-success align-self-start ml-3">Online</span>
-								</div>
-							</div>
-
-							<!-- Numbers -->
-							<div class="card-body py-0">
-								<div class="row text-center">
-									<div class="col-4">
-										<div class="mb-3">
-											<h5 class="font-weight-semibold mb-0">2,345</h5>
-											<span class="text-muted font-size-sm">this week</span>
+											<div class="dropdown-menu dropdown-menu-right">
+												<li>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												</li>
+											</div>
 										</div>
 									</div>
-
-									<div class="col-4">
-										<div class="mb-3">
-											<h5 class="font-weight-semibold mb-0">3,568</h5>
-											<span class="text-muted font-size-sm">this month</span>
-										</div>
-									</div>
-
-									<div class="col-4">
-										<div class="mb-3">
-											<h5 class="font-weight-semibold mb-0">32,693</h5>
-											<span class="text-muted font-size-sm">all messages</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /numbers -->
-
-
-							<!-- Area chart -->
-							<div id="messages-stats"></div>
-							<!-- /area chart -->
-
-
-							<!-- Tabs -->
-		                	<ul class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0">
-								<li class="nav-item">
-									<a href="#messages-tue" class="nav-link font-size-sm text-uppercase active" data-toggle="tab">
-										Tuesday
-									</a>
-								</li>
-
-								<li class="nav-item">
-									<a href="#messages-mon" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
-										Monday
-									</a>
-								</li>
-
-								<li class="nav-item">
-									<a href="#messages-fri" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
-										Friday
-									</a>
-								</li>
-							</ul>
-							<!-- /tabs -->
-
-
-							<!-- Tabs content -->
-							<div class="tab-content card-body">
-								<div class="tab-pane active fade show" id="messages-tue">
-									<ul class="media-list">
-										<li class="media">
-											<div class="mr-3 position-relative">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">8</span>
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">James Alexander</a>
-													<span class="font-size-sm text-muted">14:58</span>
-												</div>
-
-												The constitutionally inventoried precariously...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3 position-relative">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">6</span>
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Margo Baker</a>
-													<span class="font-size-sm text-muted">12:16</span>
-												</div>
-
-												Pinched a well more moral chose goodness...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Jeremy Victorino</a>
-													<span class="font-size-sm text-muted">09:48</span>
-												</div>
-
-												Pert thickly mischievous clung frowned well...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Beatrix Diaz</a>
-													<span class="font-size-sm text-muted">05:54</span>
-												</div>
-
-												Nightingale taped hello bucolic fussily cardinal...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">												
-												<div class="d-flex justify-content-between">
-													<a href="#">Richard Vango</a>
-													<span class="font-size-sm text-muted">01:43</span>
-												</div>
-
-												Amidst roadrunner distantly pompously where...
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="tab-pane fade" id="messages-mon">
-									<ul class="media-list">
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Isak Temes</a>
-													<span class="font-size-sm text-muted">Tue, 19:58</span>
-												</div>
-
-												Reasonable palpably rankly expressly grimy...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Vittorio Cosgrove</a>
-													<span class="font-size-sm text-muted">Tue, 16:35</span>
-												</div>
-
-												Arguably therefore more unexplainable fumed...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Hilary Talaugon</a>
-													<span class="font-size-sm text-muted">Tue, 12:16</span>
-												</div>
-
-												Nicely unlike porpoise a kookaburra past more...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Bobbie Seber</a>
-													<span class="font-size-sm text-muted">Tue, 09:20</span>
-												</div>
-
-												Before visual vigilantly fortuitous tortoise...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Walther Laws</a>
-													<span class="font-size-sm text-muted">Tue, 03:29</span>
-												</div>
-
-												Far affecting more leered unerringly dishonest...
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="tab-pane fade" id="messages-fri">
-									<ul class="media-list">
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Owen Stretch</a>
-													<span class="font-size-sm text-muted">Mon, 18:12</span>
-												</div>
-
-												Tardy rattlesnake seal raptly earthworm...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Jenilee Mcnair</a>
-													<span class="font-size-sm text-muted">Mon, 14:03</span>
-												</div>
-
-												Since hello dear pushed amid darn trite...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Alaster Jain</a>
-													<span class="font-size-sm text-muted">Mon, 13:59</span>
-												</div>
-
-												Dachshund cardinal dear next jeepers well...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Sigfrid Thisted</a>
-													<span class="font-size-sm text-muted">Mon, 09:26</span>
-												</div>
-
-												Lighted wolf yikes less lemur crud grunted...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Sherilyn Mckee</a>
-													<span class="font-size-sm text-muted">Mon, 06:38</span>
-												</div>
-
-												Less unicorn a however careless husky...
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- /tabs content -->
-
-						</div>
-						<!-- /my messages -->
-
-
-						
-
-					</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<!-- /dashboard content -->
+			</div>
+		</div>
+	</div>
+				<!-- /pagination types -->
+
+
+				<!-- State saving -->
+				<!-- >
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">State saving</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						DataTables has the option of being able to <code>save the state</code> of a table: its paging position, ordering state etc., so that is can be restored when the user reloads a page, or comes back to the page after visiting a sub-page. This state saving ability is enabled by the <code>stateSave</code> option. The <code>duration</code> for which the saved state is valid can be set using the <code>stateDuration</code> initialisation parameter (2 hours by default).
+					</div>
+
+					<table class="table datatable-save-state">
+						<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Job Title</th>
+								<th>DOB</th>
+								<th>Status</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Marth</td>
+								<td><a href="#">Enright</a></td>
+								<td>Traffic Court Referee</td>
+								<td>22 Jun 1972</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Jackelyn</td>
+								<td>Weible</td>
+								<td><a href="#">Airline Transport Pilot</a></td>
+								<td>3 Oct 1981</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Aura</td>
+								<td>Hard</td>
+								<td>Business Services Sales Representative</td>
+								<td>19 Apr 1969</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Nathalie</td>
+								<td><a href="#">Pretty</a></td>
+								<td>Drywall Stripper</td>
+								<td>13 Dec 1977</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sharan</td>
+								<td>Leland</td>
+								<td>Aviation Tactical Readiness Officer</td>
+								<td>30 Dec 1991</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Maxine</td>
+								<td><a href="#">Woldt</a></td>
+								<td><a href="#">Business Services Sales Representative</a></td>
+								<td>17 Oct 1987</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sylvia</td>
+								<td><a href="#">Mcgaughy</a></td>
+								<td>Hemodialysis Technician</td>
+								<td>11 Nov 1983</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Lizzee</td>
+								<td><a href="#">Goodlow</a></td>
+								<td>Technical Services Librarian</td>
+								<td>1 Nov 1961</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Kennedy</td>
+								<td>Haley</td>
+								<td>Senior Marketing Designer</td>
+								<td>18 Dec 1960</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Chantal</td>
+								<td><a href="#">Nailor</a></td>
+								<td>Technical Services Librarian</td>
+								<td>10 Jan 1980</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Delma</td>
+								<td>Bonds</td>
+								<td>Lead Brand Manager</td>
+								<td>21 Dec 1968</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Roland</td>
+								<td>Salmos</td>
+								<td><a href="#">Senior Program Developer</a></td>
+								<td>5 Jun 1986</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Coy</td>
+								<td>Wollard</td>
+								<td>Customer Service Operator</td>
+								<td>12 Oct 1982</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Maxwell</td>
+								<td>Maben</td>
+								<td>Regional Representative</td>
+								<td>25 Feb 1988</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Cicely</td>
+								<td>Sigler</td>
+								<td><a href="#">Senior Research Officer</a></td>
+								<td>15 Mar 1960</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</-- >
+				<!-- /state saving -->
+
+
+				<!-- Scrollable datatable -->
+				<!-- >
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Scrollable datatable</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						This example shows the DataTables table body <code>scrolling</code> in the <code>vertical</code> direction. This can generally be seen as an alternative method to pagination for displaying a large table in a fairly small vertical area, and as such pagination has been disabled here. Note that this is not mandatory, it will work just fine with pagination enabled as well!.
+					</div>
+
+					<table class="table datatable-scroll-y" width="100%">
+						<thead>
+							<tr>
+								<th>First Name</th>
+								<th>Last Name</th>
+								<th>Job Title</th>
+								<th>DOB</th>
+								<th>Status</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Marth</td>
+								<td><a href="#">Enright</a></td>
+								<td>Traffic Court Referee</td>
+								<td>22 Jun 1972</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Jackelyn</td>
+								<td>Weible</td>
+								<td><a href="#">Airline Transport Pilot</a></td>
+								<td>3 Oct 1981</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Aura</td>
+								<td>Hard</td>
+								<td>Business Services Sales Representative</td>
+								<td>19 Apr 1969</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Nathalie</td>
+								<td><a href="#">Pretty</a></td>
+								<td>Drywall Stripper</td>
+								<td>13 Dec 1977</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sharan</td>
+								<td>Leland</td>
+								<td>Aviation Tactical Readiness Officer</td>
+								<td>30 Dec 1991</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Maxine</td>
+								<td><a href="#">Woldt</a></td>
+								<td><a href="#">Business Services Sales Representative</a></td>
+								<td>17 Oct 1987</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Sylvia</td>
+								<td><a href="#">Mcgaughy</a></td>
+								<td>Hemodialysis Technician</td>
+								<td>11 Nov 1983</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Lizzee</td>
+								<td><a href="#">Goodlow</a></td>
+								<td>Technical Services Librarian</td>
+								<td>1 Nov 1961</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Kennedy</td>
+								<td>Haley</td>
+								<td>Senior Marketing Designer</td>
+								<td>18 Dec 1960</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Chantal</td>
+								<td><a href="#">Nailor</a></td>
+								<td>Technical Services Librarian</td>
+								<td>10 Jan 1980</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Delma</td>
+								<td>Bonds</td>
+								<td>Lead Brand Manager</td>
+								<td>21 Dec 1968</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Roland</td>
+								<td>Salmos</td>
+								<td><a href="#">Senior Program Developer</a></td>
+								<td>5 Jun 1986</td>
+								<td><span class="badge badge-secondary">Inactive</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Coy</td>
+								<td>Wollard</td>
+								<td>Customer Service Operator</td>
+								<td>12 Oct 1982</td>
+								<td><span class="badge badge-success">Active</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Maxwell</td>
+								<td>Maben</td>
+								<td>Regional Representative</td>
+								<td>25 Feb 1988</td>
+								<td><span class="badge badge-danger">Suspended</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Cicely</td>
+								<td>Sigler</td>
+								<td><a href="#">Senior Research Officer</a></td>
+								<td>15 Mar 1960</td>
+								<td><span class="badge badge-info">Pending</span></td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
+												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</-- >
+				<!-- /scrollable datatable -->
 
 			</div>
 			<!-- /content area -->
