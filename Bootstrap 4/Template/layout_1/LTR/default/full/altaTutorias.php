@@ -23,15 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/visualization/d3/d3.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/styling/switchery.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
-	<script src="../../../../global_assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script src="../../../../global_assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/dashboard.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_layouts.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -41,7 +37,7 @@
 	<!-- Main navbar -->
 	<div class="navbar navbar-expand-md navbar-dark">
 		<div class="navbar-brand">
-			<a href="index.html" class="d-inline-block">
+			<a href="index2.php" class="d-inline-block">
 				<img src="../../../../global_assets/images/logo_light.png" alt="">
 			</a>
 		</div>
@@ -407,27 +403,27 @@
 						<!-- Main -->
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Main</div> <i class="icon-menu" title="Main"></i></li>
 						<li class="nav-item">
-							<a href="index.html" class="nav-link active">
+							<a href="index2.php" class="nav-link">
 								<i class="icon-home4"></i>
 								<span>
 									Dashboard
+									<span class="d-block font-weight-normal opacity-50">No active orders</span>
 								</span>
 							</a>
 						</li>
-							<li class="nav-item nav-item-submenu">
+<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php " class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/rutas.html" class="nav-link ">rutas </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php" class="nav-link active">Alta</a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link">Consultar </a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Maestros</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaMaestros.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaMaestros.php" class="nav-link active">Alta</a></li>
 								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
 							</ul>
 						</li>
@@ -435,18 +431,18 @@
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Materias</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaMaterias.php" class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basicphp" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaMaterias.php" class="nav-link active">Alta</a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link">Consultar </a></li>
 							</ul>
-						</li>	
+						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Carreras</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
 								<li class="nav-item"><a href="../../../LTR/default/full/altaCarreras.php" class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link">Consultar </a></li>
 							</ul>
-						</li>	
+						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Tutorias</span></a>
 
@@ -454,12 +450,23 @@
 								<li class="nav-item"><a href="../../../LTR/default/full/altaTutorias.php" class="nav-link active">Alta </a></li>
 								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>	
-									<!-- >	
+						</li>
+						<!-- >
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Layouts">
+								<li class="nav-item"><a href="index.html" class="nav-link active">Default layout</a></li>
+								<li class="nav-item"><a href="../../../../layout_2/LTR/default/full/index.html" class="nav-link">Layout 2</a></li>
+								<li class="nav-item"><a href="../../../../layout_3/LTR/default/full/index.html" class="nav-link">Layout 3</a></li>
+								<li class="nav-item"><a href="../../../../layout_4/LTR/default/full/index.html" class="nav-link">Layout 4</a></li>
+								<li class="nav-item"><a href="../../../../layout_5/LTR/default/full/index.html" class="nav-link">Layout 5</a></li>
+								<li class="nav-item"><a href="../../../../layout_6/LTR/default/full/index.html" class="nav-link disabled">Layout 6 <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
+							</ul>
+						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Themes</span></a>
-							
-	
+
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
 								<li class="nav-item"><a href="index.html" class="nav-link active">Default</a></li>
 								<li class="nav-item"><a href="../../../LTR/material/full/index.html" class="nav-link">Material</a></li>
@@ -467,10 +474,6 @@
 								<li class="nav-item"><a href="../../../LTR/clean/full/index.html" class="nav-link disabled">Clean <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						</-- >
-
-						
-						<!-- >
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-stack"></i> <span>Starter kit</span></a>
 
@@ -518,9 +521,9 @@
 						</-- >
 						<!-- /main -->
 
-						<!-- Formularios -->
+						<!-- Forms -->
 						<!-- >
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs"></div>Formularios <i class="icon-menu" title="Forms"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Forms</div> <i class="icon-menu" title="Forms"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-pencil3"></i> <span>Form components</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form components">
@@ -564,22 +567,20 @@
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">Location pickers</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Altas</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link active">Altas y bajas</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
 						</-- >
-						<!-- /formularios -->
+						<!-- /forms -->
 
-						
-
-						<!-- componentes -->
+						<!-- Components -->
 						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Components</div> <i class="icon-menu" title="Components"></i></li>
 						<li class="nav-item nav-item-submenu">
@@ -683,9 +684,9 @@
 								<li class="nav-item"><a href="icons_fontawesome.html" class="nav-link">Font awesome</a></li>
 							</ul>
 						</li>
-						</-->
-						<!-- componentes -->
-						
+						</-- >
+						<!-- /components -->
+
 						<!-- Layout -->
 						<!-- >
 						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Layout</div> <i class="icon-menu" title="Layout options"></i></li>
@@ -850,7 +851,7 @@
 								<li class="nav-item"><a href="#" class="nav-link"><i class="icon-chrome"></i> Second level</a></li>
 							</ul>
 						</li>
-						</-->
+						</-- >
 						<!-- /layout -->
 
 						<!-- Data visualization -->
@@ -956,7 +957,7 @@
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						</-->
+						</-- >
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
@@ -1009,9 +1010,10 @@
 						</-->
 						<!-- /extensions -->
 
+
 						<!-- Tables -->
 						<!-- >
-						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Consultar</div> <i class="icon-menu" title="Tables"></i></li>
+						<li class="nav-item-header"><div class="text-uppercase font-size-xs line-height-xs">Tables</div> <i class="icon-menu" title="Tables"></i></li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-table2"></i> <span>Basic tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Basic tables">
@@ -1243,7 +1245,7 @@
 								<li class="nav-item"><a href="widgets_form.html" class="nav-link disabled">Form widgets <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
-						</-->
+						</-- >
 						<!-- /page kits -->
 
 					</ul>
@@ -1264,7 +1266,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Home</span> - Menu</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Form Layouts</span> - Horizontal</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1280,8 +1282,9 @@
 				<div class="breadcrumb-line breadcrumb-line-light header-elements-md-inline">
 					<div class="d-flex">
 						<div class="breadcrumb">
-							<a href="index.html" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<span class="breadcrumb-item active">Dashboard</span>
+							<a href="index2.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
+							<a href="form_layout_horizontal.php" class="breadcrumb-item">Form layouts</a>
+							<span class="breadcrumb-item active">Horizontal</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1318,205 +1321,19 @@
 			<!-- Content area -->
 			<div class="content">
 
-				<!-- Main charts -->
+				<!-- Horizontal form options -->
 				<div class="row">
-					<div class="col-xl-7">
+					<div class="col-md-6">
 
-						<!-- Traffic sources -->
+
+
+						<!-- /basic layout -->
+
+						<!-- Static mode -->
+						<!-- >
 						<div class="card">
 							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Traffic sources</h6>
-								<div class="header-elements">
-									<div class="form-check form-check-right form-check-switchery form-check-switchery-sm">
-										<label class="form-check-label">
-											Live update:
-											<input type="checkbox" class="form-input-switchery" checked data-fouc>
-										</label>
-									</div>
-								</div>
-							</div>
-
-							<div class="card-body py-0">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-teal text-teal rounded-round border-2 btn-icon mr-3">
-												<i class="icon-plus3"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">New visitors</div>
-												<span class="text-muted">2,349 avg</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
-									</div>
-
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-warning-400 text-warning-400 rounded-round border-2 btn-icon mr-3">
-												<i class="icon-watch2"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">New sessions</div>
-												<span class="text-muted">08:20 avg</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
-									</div>
-
-									<div class="col-sm-4">
-										<div class="d-flex align-items-center justify-content-center mb-2">
-											<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon mr-3">
-												<i class="icon-people"></i>
-											</a>
-											<div>
-												<div class="font-weight-semibold">Total online</div>
-												<span class="text-muted"><span class="badge badge-mark border-success mr-2"></span> 5,378 avg</span>
-											</div>
-										</div>
-										<div class="w-75 mx-auto mb-3" id="total-online"></div>
-									</div>
-								</div>
-							</div>
-
-							<div class="chart position-relative" id="traffic-sources"></div>
-						</div>
-						<!-- /traffic sources -->
-
-					</div>
-
-					<div class="col-xl-5">
-
-						<!-- Progress counters -->
-						<div class="row">
-							<div class="col-sm-6">
-
-								<!-- Available hours -->
-								<div class="card text-center">
-									<div class="card-body">
-
-					                	<!-- Progress counter -->
-										<div class="svg-center position-relative" id="hours-available-progress"></div>
-										<!-- /progress counter -->
-
-
-										<!-- Bars -->
-										<div id="hours-available-bars"></div>
-										<!-- /bars -->
-
-									</div>
-								</div>
-								<!-- /available hours -->
-
-							</div>
-
-							<div class="col-sm-6">
-
-								<!-- Productivity goal -->
-								<div class="card text-center">
-									<div class="card-body">
-
-										<!-- Progress counter -->
-										<div class="svg-center position-relative" id="goal-progress"></div>
-										<!-- /progress counter -->
-
-										<!-- Bars -->
-										<div id="goal-bars"></div>
-										<!-- /bars -->
-
-									</div>
-								</div>
-								<!-- /productivity goal -->
-
-							</div>
-						</div>
-						<!-- /progress counters -->
-
-					</div>
-				</div>
-				<!-- /main charts -->
-
-
-				<!-- Dashboard content -->
-				<div class="row">
-
-					<div class="col-xl-8">
-
-						
-
-
-						<!-- Quick stats boxes -->
-						<div class="row">
-							<div class="col-lg-4">
-
-								<!-- Members online -->
-								<div class="card bg-teal-400">
-									<div class="card-body">
-										<div class="d-flex">
-											<h3 class="font-weight-semibold mb-0">3,450</h3>
-											<span class="badge bg-teal-800 badge-pill align-self-center ml-auto">+53,6%</span>
-					                	</div>
-					                	
-					                	<div>
-											Members online
-											<div class="font-size-sm opacity-75">489 avg</div>
-										</div>
-									</div>
-
-									<div class="container-fluid">
-										<div id="members-online"></div>
-									</div>
-								</div>
-								<!-- /members online -->
-
-							</div>
-
-							<div class="col-lg-4">
-
-								<!-- Current server load -->
-								<div class="card bg-pink-400">
-									<div class="card-body">
-										<div class="d-flex">
-											<h3 class="font-weight-semibold mb-0">49.4%</h3>
-											<div class="list-icons ml-auto">
-						                		<div class="list-icons-item dropdown">
-						                			<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="icon-cog3"></i></a>
-													<div class="dropdown-menu dropdown-menu-right">
-														<a href="#" class="dropdown-item"><i class="icon-sync"></i> Update data</a>
-														<a href="#" class="dropdown-item"><i class="icon-list-unordered"></i> Detailed log</a>
-														<a href="#" class="dropdown-item"><i class="icon-pie5"></i> Statistics</a>
-														<a href="#" class="dropdown-item"><i class="icon-cross3"></i> Clear list</a>
-													</div>
-						                		</div>
-					                		</div>
-					                	</div>
-					                	
-					                	<div>
-											Current server load
-											<div class="font-size-sm opacity-75">34.6% avg</div>
-										</div>
-									</div>
-
-									<div id="server-load"></div>
-								</div>
-								<!-- /current server load -->
-
-							</div>
-
-							<div class="col-lg-4">
-
-
-							</div>
-						</div>
-						<!-- /quick stats boxes -->
-
-
-
-
-						<!-- Latest posts -->
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">Latest posts</h6>
+								<h5 class="card-title">Static mode</h5>
 								<div class="header-elements">
 									<div class="list-icons">
 				                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1524,421 +1341,738 @@
 				                		<a class="list-icons-item" data-action="remove"></a>
 				                	</div>
 			                	</div>
-		                	</div>
+							</div>
 
-							<div class="card-body pb-0">
-								<div class="row">
-									<div class="col-xl-6">
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Up unpacked friendly</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
-					                    		</ul>
-												The him father parish looked has sooner. Attachment frequently terminated son hello...
-											</div>
+							<div class="card-body">
+								<form action="#">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Name:</label>
+										<div class="col-lg-9">
+											<div class="form-control-plaintext">Eugene Kopyov</div>
 										</div>
+									</div>
 
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Password:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" readonly value="********">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Your state:</label>
+										<div class="col-lg-9">
+											<select class="form-control form-control-select2" disabled data-fouc>
+												<optgroup label="Alaskan/Hawaiian Time Zone">
+													<option value="AK">Alaska</option>
+													<option value="HI">Hawaii</option>
+												</optgroup>
+												<optgroup label="Pacific Time Zone">
+													<option value="CA">California</option>
+													<option value="NV" selected>Nevada</option>
+													<option value="WA">Washington</option>
+												</optgroup>
+												<optgroup label="Mountain Time Zone">
+													<option value="AZ">Arizona</option>
+													<option value="CO">Colorado</option>
+													<option value="WY">Wyoming</option>
+												</optgroup>
+												<optgroup label="Central Time Zone">
+													<option value="AL">Alabama</option>
+													<option value="AR">Arkansas</option>
+													<option value="KY">Kentucky</option>
+												</optgroup>
+												<optgroup label="Eastern Time Zone">
+													<option value="CT">Connecticut</option>
+													<option value="DE">Delaware</option>
+													<option value="FL">Florida</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Gender:</label>
+										<div class="col-lg-9">
+											<div class="form-check form-check-inline disabled">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" name="gender" disabled checked data-fouc>
+													Male
+												</label>
 											</div>
 
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">It allowance prevailed</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
-					                    		</ul>
-												Alteration literature to or an sympathize mr imprudence. Of is ferrars subject enjoyed...
+											<div class="form-check form-check-inline disabled">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" name="gender" disabled data-fouc>
+													Female
+												</label>
+											</div>	
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Your avatar:</label>
+										<div class="col-lg-9">
+											<div class="media mt-0">
+												<div class="mr-3">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="60" height="60" class="rounded-round" alt="">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<input type="file" class="form-input-styled" disabled data-fouc>
+													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+												</div>
 											</div>
 										</div>
 									</div>
 
-									<div class="col-xl-6">
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Case read they must</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> Video tutorials</li>
-					                    		</ul>
-												On it differed repeated wandered required in. Then girl neat why yet knew rose spot...
-											</div>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Tags:</label>
+										<div class="col-lg-9">
+											<select multiple="multiple" disabled data-placeholder="Enter tags" class="form-control form-control-select2-icons" data-fouc>
+												<optgroup label="Services">
+													<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
+													<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
+													<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
+													<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
+													<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
+												</optgroup>
+												<optgroup label="File types">
+													<option value="pdf" data-icon="file-pdf">PDF</option>
+													<option value="word" data-icon="file-word">Word</option>
+													<option value="excel" data-icon="file-excel">Excel</option>
+													<option value="openoffice" data-icon="file-openoffice">Open office</option>
+												</optgroup>
+												<optgroup label="Browsers">
+													<option value="chrome" data-icon="chrome" selected>Chrome</option>
+													<option value="firefox" data-icon="firefox" selected>Firefox</option>
+													<option value="safari" data-icon="safari">Safari</option>
+													<option value="opera" data-icon="opera">Opera</option>
+													<option value="IE" data-icon="IE">IE</option>
+												</optgroup>
+											</select>
 										</div>
+									</div>
 
-										<div class="media flex-column flex-sm-row mt-0 mb-3">
-				        					<div class="mr-sm-3 mb-2 mb-sm-0">
-												<div class="card-img-actions">
-													<a href="#">
-														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="img-fluid img-preview rounded" alt="">
-														<span class="card-img-actions-overlay card-img"><i class="icon-play3 icon-2x"></i></span>
-													</a>
-												</div>
-											</div>
-
-				        					<div class="media-body">
-												<h6 class="media-title"><a href="#">Too carriage attended</a></h6>
-					                    		<ul class="list-inline list-inline-dotted text-muted mb-2">
-					                    			<li class="list-inline-item"><i class="icon-book-play mr-2"></i> FAQ section</li>
-					                    		</ul>
-												Marianne or husbands if at stronger ye. Considered is as middletons uncommonly...
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Your message:</label>
+										<div class="col-lg-9">
+											<div class="form-control-plaintext">
+												<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
 											</div>
 										</div>
 									</div>
-								</div>
+
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
 							</div>
 						</div>
-						<!-- /latest posts -->
-
-					</div>
-
-					<div class="col-xl-4">
-
-						
-
-
-
-
-						<!-- My messages -->
-						<div class="card">
-							<div class="card-header header-elements-inline">
-								<h6 class="card-title">My messages</h6>
-								<div class="header-elements">
-									<span><i class="icon-history text-warning mr-2"></i> Jul 7, 10:30</span>
-									<span class="badge bg-success align-self-start ml-3">Online</span>
-								</div>
-							</div>
-
-							<!-- Numbers -->
-							<div class="card-body py-0">
-								<div class="row text-center">
-									<div class="col-4">
-										<div class="mb-3">
-											<h5 class="font-weight-semibold mb-0">2,345</h5>
-											<span class="text-muted font-size-sm">this week</span>
-										</div>
-									</div>
-
-									<div class="col-4">
-										<div class="mb-3">
-											<h5 class="font-weight-semibold mb-0">3,568</h5>
-											<span class="text-muted font-size-sm">this month</span>
-										</div>
-									</div>
-
-									<div class="col-4">
-										<div class="mb-3">
-											<h5 class="font-weight-semibold mb-0">32,693</h5>
-											<span class="text-muted font-size-sm">all messages</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- /numbers -->
-
-
-							<!-- Area chart -->
-							<div id="messages-stats"></div>
-							<!-- /area chart -->
-
-
-							<!-- Tabs -->
-		                	<ul class="nav nav-tabs nav-tabs-solid nav-justified bg-indigo-400 border-x-0 border-bottom-0 border-top-indigo-300 mb-0">
-								<li class="nav-item">
-									<a href="#messages-tue" class="nav-link font-size-sm text-uppercase active" data-toggle="tab">
-										Tuesday
-									</a>
-								</li>
-
-								<li class="nav-item">
-									<a href="#messages-mon" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
-										Monday
-									</a>
-								</li>
-
-								<li class="nav-item">
-									<a href="#messages-fri" class="nav-link font-size-sm text-uppercase" data-toggle="tab">
-										Friday
-									</a>
-								</li>
-							</ul>
-							<!-- /tabs -->
-
-
-							<!-- Tabs content -->
-							<div class="tab-content card-body">
-								<div class="tab-pane active fade show" id="messages-tue">
-									<ul class="media-list">
-										<li class="media">
-											<div class="mr-3 position-relative">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">8</span>
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">James Alexander</a>
-													<span class="font-size-sm text-muted">14:58</span>
-												</div>
-
-												The constitutionally inventoried precariously...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3 position-relative">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-												<span class="badge bg-danger-400 badge-pill badge-float border-2 border-white">6</span>
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Margo Baker</a>
-													<span class="font-size-sm text-muted">12:16</span>
-												</div>
-
-												Pinched a well more moral chose goodness...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Jeremy Victorino</a>
-													<span class="font-size-sm text-muted">09:48</span>
-												</div>
-
-												Pert thickly mischievous clung frowned well...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Beatrix Diaz</a>
-													<span class="font-size-sm text-muted">05:54</span>
-												</div>
-
-												Nightingale taped hello bucolic fussily cardinal...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">												
-												<div class="d-flex justify-content-between">
-													<a href="#">Richard Vango</a>
-													<span class="font-size-sm text-muted">01:43</span>
-												</div>
-
-												Amidst roadrunner distantly pompously where...
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="tab-pane fade" id="messages-mon">
-									<ul class="media-list">
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Isak Temes</a>
-													<span class="font-size-sm text-muted">Tue, 19:58</span>
-												</div>
-
-												Reasonable palpably rankly expressly grimy...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Vittorio Cosgrove</a>
-													<span class="font-size-sm text-muted">Tue, 16:35</span>
-												</div>
-
-												Arguably therefore more unexplainable fumed...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Hilary Talaugon</a>
-													<span class="font-size-sm text-muted">Tue, 12:16</span>
-												</div>
-
-												Nicely unlike porpoise a kookaburra past more...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Bobbie Seber</a>
-													<span class="font-size-sm text-muted">Tue, 09:20</span>
-												</div>
-
-												Before visual vigilantly fortuitous tortoise...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Walther Laws</a>
-													<span class="font-size-sm text-muted">Tue, 03:29</span>
-												</div>
-
-												Far affecting more leered unerringly dishonest...
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<div class="tab-pane fade" id="messages-fri">
-									<ul class="media-list">
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Owen Stretch</a>
-													<span class="font-size-sm text-muted">Mon, 18:12</span>
-												</div>
-
-												Tardy rattlesnake seal raptly earthworm...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Jenilee Mcnair</a>
-													<span class="font-size-sm text-muted">Mon, 14:03</span>
-												</div>
-
-												Since hello dear pushed amid darn trite...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Alaster Jain</a>
-													<span class="font-size-sm text-muted">Mon, 13:59</span>
-												</div>
-
-												Dachshund cardinal dear next jeepers well...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Sigfrid Thisted</a>
-													<span class="font-size-sm text-muted">Mon, 09:26</span>
-												</div>
-
-												Lighted wolf yikes less lemur crud grunted...
-											</div>
-										</li>
-
-										<li class="media">
-											<div class="mr-3">
-												<img src="../../../../global_assets/images/placeholders/placeholder.jpg" class="rounded-circle" width="36" height="36" alt="">
-											</div>
-
-											<div class="media-body">
-												<div class="d-flex justify-content-between">
-													<a href="#">Sherilyn Mckee</a>
-													<span class="font-size-sm text-muted">Mon, 06:38</span>
-												</div>
-
-												Less unicorn a however careless husky...
-											</div>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- /tabs content -->
-
-						</div>
-						<!-- /my messages -->
-
-
-						
+						</-- >
+						<!-- /static mode -->
 
 					</div>
 				</div>
-				<!-- /dashboard content -->
+				<!-- /vertical form options -->
+
+
+
+				<!-- Centered forms -->
+				<!-- >
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<div class="header-elements-inline">
+											<h5 class="card-title">Centered form</h5>
+											<div class="header-elements">
+												<div class="list-icons">
+							                		<a class="list-icons-item" data-action="collapse"></a>
+							                		<a class="list-icons-item" data-action="reload"></a>
+							                		<a class="list-icons-item" data-action="remove"></a>
+							                	</div>
+						                	</div>
+					                	</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<form action="#">
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your name:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Eugene Kopyov">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Your strong password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Select your state:</label>
+												<div class="col-lg-9">
+													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="OR">Oregon</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="WY">Wyoming</option>
+														</optgroup>
+														<optgroup label="Central Time Zone">
+															<option value="AL">Alabama</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+														</optgroup>
+														<optgroup label="Eastern Time Zone">
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="WV">West Virginia</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Attach screenshot:</label>
+												<div class="col-lg-9">
+													<input type="file" class="form-input-styled" data-fouc>
+													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your message:</label>
+												<div class="col-lg-9">
+													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+												</div>
+											</div>
+
+											<div class="text-right">
+												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-10 offset-md-1">
+								<div class="card">
+									<div class="card-header header-elements-inline">
+										<h5 class="card-title">Centered card</h5>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+						                		<a class="list-icons-item" data-action="reload"></a>
+						                		<a class="list-icons-item" data-action="remove"></a>
+						                	</div>
+					                	</div>
+									</div>
+
+									<div class="card-body">
+										<form action="#">
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your name:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Eugene Kopyov">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Your strong password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Select your state:</label>
+												<div class="col-lg-9">
+													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="NV">Nevada</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="ID">Idaho</option>
+														</optgroup>
+														<optgroup label="Central Time Zone">
+															<option value="AL">Alabama</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+														</optgroup>
+														<optgroup label="Eastern Time Zone">
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="WV">West Virginia</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Attach screenshot:</label>
+												<div class="col-lg-9">
+													<input type="file" class="form-input-styled" data-fouc>
+													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your message:</label>
+												<div class="col-lg-9">
+													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+												</div>
+											</div>
+
+											<div class="text-right">
+												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</-- >
+				<!-- /form centered -->
+
+
+				<!-- Fieldset legend -->
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Basic legend -->
+						<!-- >
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Basic legend</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<form action="#">
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">Enter your information</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Enter your name:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Eugene Kopyov">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Enter your password:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Your strong password">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Repeat password:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Repeat password">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Your message:</label>
+											<div class="col-lg-9">
+												<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+											</div>
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">Add personal details</legend>
+
+			                			<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Your country:</label>
+											<div class="col-lg-9">
+			                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
+			                                        <option value="USA">USA</option> 
+			                                        <option value="United Kingdom">United Kingdom</option> 
+			                                        <option value="...">...</option> 
+			                                        <option value="Australia">Australia</option> 
+			                                    </select>
+		                                    </div>
+			                			</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Select your state:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<optgroup label="Alaskan/Hawaiian Time Zone">
+														<option value="AK">Alaska</option>
+														<option value="HI">Hawaii</option>
+													</optgroup>
+													<optgroup label="Pacific Time Zone">
+														<option value="CA">California</option>
+														<option value="NV">Nevada</option>
+														<option value="WA">Washington</option>
+													</optgroup>
+													<optgroup label="Mountain Time Zone">
+														<option value="AZ">Arizona</option>
+														<option value="CO">Colorado</option>
+														<option value="WY">Wyoming</option>
+													</optgroup>
+													<optgroup label="Central Time Zone">
+														<option value="AL">Alabama</option>
+														<option value="AR">Arkansas</option>
+														<option value="KY">Kentucky</option>
+													</optgroup>
+													<optgroup label="Eastern Time Zone">
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="FL">Florida</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+
+			                			<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Gender:</label>
+											<div class="col-lg-9">
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
+														Male
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" name="gender2" class="form-input-styled" data-fouc>
+														Female
+													</label>
+												</div>
+											</div>
+			                			</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Your CV:</label>
+											<div class="col-lg-9">
+												<input type="file" class="form-input-styled" data-fouc>
+												<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
+											</div>
+										</div>
+
+			                			<div class="form-group row">
+											<label class="col-lg-3 col-form-label">About yourself:</label>
+											<div class="col-lg-9">
+			                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
+		                                    </div>
+			                			</div>
+									</fieldset>
+
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						</-- >
+						<!-- /basic legend -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Advanced legend -->
+						<!-- >
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced legend</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<form action="#">
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">
+											<i class="icon-file-text2 mr-2"></i>
+											Enter your information
+											<a class="float-right text-default" data-toggle="collapse" data-target="#demo1">
+												<i class="icon-circle-down2"></i>
+											</a>
+										</legend>
+
+										<div class="collapse show" id="demo1">
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your name:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Eugene Kopyov">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Your strong password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Repeat password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Repeat password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your message:</label>
+												<div class="col-lg-9">
+													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">
+											<i class="icon-reading mr-2"></i>
+											Add personal details
+											<a class="float-right text-default" data-toggle="collapse" data-target="#demo2">
+												<i class="icon-circle-down2"></i>
+											</a>
+										</legend>
+
+										<div class="collapse show" id="demo2">
+				                			<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your country:</label>
+												<div class="col-lg-9">
+				                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
+				                                        <option value="USA">USA</option> 
+				                                        <option value="United Kingdom">United Kingdom</option> 
+				                                        <option value="...">...</option> 
+				                                        <option value="Australia">Australia</option> 
+				                                    </select>
+			                                    </div>
+				                			</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Select your state:</label>
+												<div class="col-lg-9">
+													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="NV">Nevada</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="WY">Wyoming</option>
+														</optgroup>
+														<optgroup label="Central Time Zone">
+															<option value="AL">Alabama</option>
+															<option value="AR">Arkansas</option>
+															<option value="KY">Kentucky</option>
+														</optgroup>
+														<optgroup label="Eastern Time Zone">
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="FL">Florida</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+				                			<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Gender:</label>
+												<div class="col-lg-9">
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
+															Male
+														</label>
+													</div>
+
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="radio" name="gender2" class="form-input-styled" data-fouc>
+															Female
+														</label>
+													</div>
+												</div>
+				                			</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your CV:</label>
+												<div class="col-lg-9">
+													<input type="file" class="form-input-styled" data-fouc>
+													<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
+												</div>
+											</div>
+
+				                			<div class="form-group row">
+												<label class="col-lg-3 col-form-label">About yourself:</label>
+												<div class="col-lg-9">
+				                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
+			                                    </div>
+				                			</div>
+			                			</div>
+									</fieldset>
+
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						</-- >
+						<!-- /a legend -->
+
+					</div>
+				</div>
+				<!-- /fieldset legend -->
+
+
+				<!-- 2 columns form -->
+				<div class="card">
+					<div class="card-header header-elements-inline">
+						<h5 class="card-title">Tutorias</h5>
+						<div class="header-elements">
+							<div class="list-icons">
+		                		<a class="list-icons-item" data-action="collapse"></a>
+		                		<a class="list-icons-item" data-action="reload"></a>
+		                		<a class="list-icons-item" data-action="remove"></a>
+		                	</div>
+	                	</div>
+					</div>
+
+					<div class="card-body">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<fieldset>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i>Alumno</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Introduce el nombre">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Matricula:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Introduce la matricual">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Introduce la carrera">
+											</div>
+										</div>
+
+										
+									</fieldset>
+								</div>
+
+								<div class="col-md-6">
+									<fieldset>
+					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i>Maestro</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Nombre completo" class="form-control">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">ID de empleado:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Introducir la id" class="form-control">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Introduzca la carrera" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Fecha:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="mm/dd/yyyy" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Tema:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Introduzca el tema" class="form-control">
+											</div>
+										</div>
+
+
+									</fieldset>
+								</div>
+							</div>
+
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- /2 columns form -->
 
 			</div>
 			<!-- /content area -->

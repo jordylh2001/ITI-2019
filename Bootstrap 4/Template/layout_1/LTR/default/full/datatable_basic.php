@@ -412,39 +412,47 @@
 								</span>
 							</a>
 						</li>
-
-							<li class="nav-item nav-item-submenu">
+<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/form_layout_horizontal.php" class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link active">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php " class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/rutas.html" class="nav-link ">rutas </a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Maestros</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/form_layout_horizontal.php" class="nav-link active">Alta</a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link active">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaMaestros.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
 							</ul>
 						</li>
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Materias</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/form_layout_horizontal.php" class="nav-link active">Alta</a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link active">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaMaterias.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basicphp" class="nav-link ">Consultar </a></li>
 							</ul>
 						</li>	
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Carreras</span></a>
 
 							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/form_layout_horizontal.php" class="nav-link active">Alta</a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link active">Consultar </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/altaCarreras.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>			
+						</li>	
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Tutorias</span></a>
+
+							<ul class="nav nav-group-sub" data-submenu-title="Themes">
+								<li class="nav-item"><a href="../../../LTR/default/full/altaTutorias.php" class="nav-link active">Alta </a></li>
+								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
+							</ul>
+						</li>				
 						<!-- >
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
@@ -1429,6 +1437,68 @@
 				</div>
 				<!-- /basic modal -->
 				<!-- Basic modal -->
+				<div id="modal_tutorias" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Editar</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">ID:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre alumno:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										<label class="col-lg-3 col-form-label">Matricula:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la Matricula " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Carrera:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la carrera " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Nombre maestro:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el nombre " id="Genero">
+										</div>
+										<label class="col-lg-3 col-form-label">Numero de empleado:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el numero de empleado " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Carrera:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la carrera telefonico " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Fecha:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="mm/dd/yyyy " id="Descripcion">
+										</div>
+										<label class="col-lg-3 col-form-label">Tema:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el tema " id="Grupo">
+										</div>
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary">Save changes</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
 				<div id="modal_materia" class="modal fade" tabindex="-1">
 					<div class="modal-dialog">
 						<div class="modal-content">
@@ -2002,6 +2072,121 @@
 					</table>
 				</div>
 			</tr>
+		</tbody>
+	</table>
+</div>
+
+			<!-- Pagination types -->
+				<div class="content">
+
+				<div class="card">
+					
+					<div style="overflow: auto;">
+
+					<table class="table datatable-pagination" width="100%">
+						<thead>
+							<center><h1>Tutorias</h1></center>
+							<tr>
+								<th>ID</th>
+								<th>Nombre alumno</th>
+								<th>Matricula</th>
+								<th>Carrera</th>
+								<th>Nombre maestro</th>
+								<th>Numero de empleado</th>
+								<th>Carrera</th>
+								<th>Fecha</th>
+								<th>Tema</th>
+								<th class="text-center">Actions</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Mario Carlos </td>
+								<td>136547</td>
+								<td>ITI</td>
+								<td>Mario Humberto</td>
+								<td>26</td>
+								<td>ITI</td>
+								<td>26/5/2017</td>
+								<td>Componentes de una computadora</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<li>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												</li>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Juan Carlos </td>
+								<td>136545</td>
+								<td>ITI</td>
+								<td>Omar Jasso</td>
+								<td>25</td>
+								<td>ITI</td>
+								<td>24/4/2017</td>
+								<td>Ciclos</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<li>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												</li>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Leonardo David </td>
+								<td>136534</td>
+								<td>ITI</td>
+								<td>Mario Humberto</td>
+								<td>26</td>
+								<td>ITI</td>
+								<td>27/5/2017</td>
+								<td>Word press</td>
+								<td class="text-center">
+									<div class="list-icons">
+										<div class="dropdown">
+											<a href="#" class="list-icons-item" data-toggle="dropdown">
+												<i class="icon-menu9"></i>
+											</a>
+
+											<div class="dropdown-menu dropdown-menu-right">
+												<li>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												</li>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+				<!-- /pagination types -->
 
 
 				<!-- State saving -->
