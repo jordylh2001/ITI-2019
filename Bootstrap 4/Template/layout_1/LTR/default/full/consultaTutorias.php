@@ -1446,6 +1446,41 @@
 				</div>
 				<!-- /basic modal -->
 				<!-- Basic modal -->
+				<div id="modal_login" class="modal fade" tabindex="-1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Login</h5>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+
+							<div class="modal-body">
+								<form action="#" method="post">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Usuario:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
+										</div>
+										<label class="col-lg-3 col-form-label">Contraseña:</label>
+										<div class="col-lg-9">
+											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
+										</div>
+										
+									</div>
+								</form>
+
+								
+							</div>
+
+							<div class="modal-footer">
+								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
+								<button type="button" class="btn bg-primary" data-toggle="modal" data-target="#modal_delete">Aceptar</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /basic modal -->
+				<!-- Basic modal -->
 				<div id="modal_tutorias" class="modal fade" tabindex="-1">
 					<div class="modal-dialog">
 						<div class="modal-content">
@@ -1687,6 +1722,7 @@
 								<th>Carrera</th>
 								<th>Fecha</th>
 								<th>Tema</th>
+								<th>estado</th>
 								<th class="text-center">Actions</th>
 							</tr>
 						</thead>
@@ -1701,6 +1737,7 @@
 								<td>ITI</td>
 								<td>26/5/2017</td>
 								<td>Componentes de una computadora</td>
+								<td>completado</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1711,7 +1748,7 @@
 											<div class="dropdown-menu dropdown-menu-right">
 												<li>
 												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login">borrar </button></ul>
 												</li>
 											</div>
 										</div>
@@ -1728,6 +1765,7 @@
 								<td>ITI</td>
 								<td>24/4/2017</td>
 								<td>Ciclos</td>
+								<td>en proceso</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1738,7 +1776,7 @@
 											<div class="dropdown-menu dropdown-menu-right">
 												<li>
 												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login">borrar </button></ul>
 												</li>
 											</div>
 										</div>
@@ -1755,6 +1793,7 @@
 								<td>ITI</td>
 								<td>27/5/2017</td>
 								<td>Word press</td>
+								<td>completado</td>
 								<td class="text-center">
 									<div class="list-icons">
 										<div class="dropdown">
@@ -1765,7 +1804,7 @@
 											<div class="dropdown-menu dropdown-menu-right">
 												<li>
 												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_tutorias">editar </button></ul>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_delete">borrar </button></ul>
+												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login">borrar </button></ul>
 												</li>
 											</div>
 										</div>
