@@ -1611,6 +1611,142 @@
 							</div>
 						</div>
 						<!-- /latest posts -->
+						<!-- Support tickets -->
+						<div class="card">
+							<div class="card-header header-elements-sm-inline">
+								<h6 class="card-title">Tutorias</h6>
+								<div class="header-elements">
+									<a class="text-default daterange-ranges font-weight-semibold cursor-pointer dropdown-toggle">
+										<i class="icon-calendar3 mr-2"></i>
+										<span></span>
+									</a>
+			                	</div>
+							</div>
+
+							<div class="card-body d-md-flex align-items-md-center justify-content-md-between flex-md-wrap">
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<div id="tickets-status"></div>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">14,327 <span class="text-success font-size-sm font-weight-normal"><i class="icon-arrow-up12"></i> (+2.9%)</span></h5>
+										<span class="badge badge-mark border-success mr-1"></span> <span class="text-muted">Jun 16, 10:00 am</span>
+									</div>
+								</div>
+
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
+										<i class="icon-alarm-add"></i>
+									</a>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">1,132</h5>
+										<span class="text-muted">Tutorias realizadas</span>
+									</div>
+								</div>
+
+								<div class="d-flex align-items-center mb-3 mb-md-0">
+									<a href="#" class="btn bg-transparent border-indigo-400 text-indigo-400 rounded-round border-2 btn-icon">
+										<i class="icon-spinner11"></i>
+									</a>
+									<div class="ml-3">
+										<h5 class="font-weight-semibold mb-0">06:25:00</h5>
+										<span class="text-muted">Tiempo</span>
+									</div>
+								</div>
+
+								<div>
+									<a href="#" class="btn bg-teal-400"><i class="icon-statistics mr-2"></i>Reportar</a>
+								</div>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table text-nowrap">
+									<thead>
+										<tr>
+											<th style="width: 50px">Hace</th>
+											<th style="width: 300px;">Alumno</th>
+											<th>Description</th>
+											<th class="text-center" style="width: 20px;"><i class="icon-arrow-down12"></i></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="table-active table-border-double">
+											<td colspan="3">Se esta realizando</td>
+											<td class="text-right">
+												<span class="badge bg-blue badge-pill">24</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<h6 class="mb-0">12</h6>
+												<div class="font-size-sm text-muted line-height-1">hours</div>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-teal-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Annabelle Doney</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-blue mr-1"></span>Realizando</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">Matricula:1930145,tema: algebra lineal</div>
+													<span class="text-muted">Maestro:Orosco,numero de empleado: 1, carrera: ITI, el 24/06/2018.</span>
+												</a>
+											</td>
+											
+										</tr>
+
+										
+										
+										
+
+										<tr class="table-active table-border-double">
+											<td colspan="3">Tutorias realizadas</td>
+											<td class="text-right">
+												<span class="badge bg-success badge-pill">42</span>
+											</td>
+										</tr>
+
+										<tr>
+											<td class="text-center">
+												<i class="icon-checkmark3 text-success"></i>
+											</td>
+											<td>
+												<div class="d-flex align-items-center">
+													<div class="mr-3">
+														<a href="#" class="btn bg-success-400 rounded-round btn-icon btn-sm">
+															<span class="letter-icon"></span>
+														</a>
+													</div>
+													<div>
+														<a href="#" class="text-default font-weight-semibold letter-icon-title">Alan Macedo</a>
+														<div class="text-muted font-size-sm"><span class="badge badge-mark border-success mr-1"></span>Realizada</div>
+													</div>
+												</div>
+											</td>
+											<td>
+												<a href="#" class="text-default">
+													<div class="font-weight-semibold">Matricula:193450,tema: Introducion a la programacion</div>
+													<span class="text-muted">Maestro:Jasso,numero de empleado: 2, carrera: ITI, el 23/06/2018.</span>
+												</a>
+											</td>
+											
+										</tr>
+
+										
+
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /support tickets -->
+
 
 					</div>
 
@@ -1932,6 +2068,7 @@
 
 						</div>
 						<!-- /my messages -->
+
 
 
 						

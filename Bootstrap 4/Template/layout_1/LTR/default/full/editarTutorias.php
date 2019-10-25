@@ -23,12 +23,11 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
-	<script src="../../../../global_assets/js/plugins/tables/datatables/datatables.min.js"></script>
 	<script src="../../../../global_assets/js/plugins/forms/selects/select2.min.js"></script>
+	<script src="../../../../global_assets/js/plugins/forms/styling/uniform.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/datatables_basic.js"></script>
-	<script src="../../../../global_assets/js/demo_pages/components_modals.js"></script>
+	<script src="../../../../global_assets/js/demo_pages/form_layouts.js"></script>
 	<!-- /theme JS files -->
 
 </head>
@@ -412,15 +411,7 @@
 								</span>
 							</a>
 						</li>
-<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
-
-							<ul class="nav nav-group-sub" data-submenu-title="Themes">
-								<li class="nav-item"><a href="../../../LTR/default/full/altaAlumnos.php " class="nav-link active">Alta </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/datatable_basic.php" class="nav-link ">Consultar </a></li>
-								<li class="nav-item"><a href="../../../LTR/default/full/rutas.html" class="nav-link ">rutas </a></li>
-							</ul>
-						</li>
+</li>
 							<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-color-sampler"></i> <span>Alumnos</span></a>
 
@@ -461,7 +452,7 @@
 								<li class="nav-item"><a href="../../../LTR/default/full/altaTutorias.php" class="nav-link active">Alta </a></li>
 								<li class="nav-item"><a href="../../../LTR/default/full/consultaTutorias.php" class="nav-link ">Consultar </a></li>
 							</ul>
-						</li>				
+						</li>	
 						<!-- >
 						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-copy"></i> <span>Layouts</span></a>
@@ -528,8 +519,8 @@
 								<span class="badge bg-blue-400 align-self-center ml-auto">2.2</span>
 							</a>
 						</li>
-						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li
-						</-->
+						<li class="nav-item"><a href="../../../RTL/default/full/index.html" class="nav-link"><i class="icon-width"></i> <span>RTL version</span></a></li>
+						</-- >
 						<!-- /main -->
 
 						<!-- Forms -->
@@ -578,13 +569,13 @@
 								<li class="nav-item"><a href="picker_location.html" class="nav-link">Location pickers</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
+						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
 							<a href="#" class="nav-link"><i class="icon-insert-template"></i> <span>Form layouts</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Form layouts">
 								<li class="nav-item"><a href="form_layout_vertical.html" class="nav-link">Vertical form</a></li>
 								<li class="nav-item"><a href="form_layout_vertical_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 								<li class="nav-item-divider"></li>
-								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link">Altas y bajas</a></li>
+								<li class="nav-item"><a href="form_layout_horizontal.html" class="nav-link active">Altas y bajas</a></li>
 								<li class="nav-item"><a href="form_layout_horizontal_styled.html" class="nav-link disabled">Custom styles <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
@@ -968,6 +959,7 @@
 								<li class="nav-item"><a href="maps_echarts.html" class="nav-link disabled">ECharts maps <span class="badge bg-transparent align-self-center ml-auto">Coming soon</span></a></li>
 							</ul>
 						</li>
+						</-- >
 						<!-- /data visualization -->
 
 						<!-- Extensions -->
@@ -1017,9 +1009,9 @@
 								<li class="nav-item"><a href="internationalization_callbacks.html" class="nav-link">Callbacks</a></li>
 							</ul>
 						</li>
-						</-- >
-
+						</-->
 						<!-- /extensions -->
+
 
 						<!-- Tables -->
 						<!-- >
@@ -1034,10 +1026,10 @@
 								<li class="nav-item"><a href="table_elements.html" class="nav-link">Table elements</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu nav-item-expanded nav-item-open">
+						<li class="nav-item nav-item-submenu">
 							<a href="#" class="nav-link"><i class="icon-grid7"></i> <span>Data tables</span></a>
 							<ul class="nav nav-group-sub" data-submenu-title="Data tables">
-								<li class="nav-item"><a href="datatable_basic.html" class="nav-link active">Consultas</a></li>
+								<li class="nav-item"><a href="datatable_basic.html" class="nav-link">Consultas</a></li>
 								<li class="nav-item"><a href="datatable_styling.html" class="nav-link">Basic styling</a></li>
 								<li class="nav-item"><a href="datatable_advanced.html" class="nav-link">Advanced examples</a></li>
 								<li class="nav-item"><a href="datatable_sorting.html" class="nav-link">Sorting options</a></li>
@@ -1089,7 +1081,7 @@
 								<li class="nav-item"><a href="datatable_responsive.html" class="nav-link">Responsive data tables</a></li>
 							</ul>
 						</li>
-						</-- >a
+						</-- >
 						<!-- /tables -->
 
 						<!-- Page kits -->
@@ -1267,413 +1259,7 @@
 			
 		</div>
 		<!-- /main sidebar -->
-<!-- Basic modal -->
-				<div id="modal_default" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
 
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">ID:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Apellidos:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese los Apellidos " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Contraseña:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la Contraseña " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Genero:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el genero " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Correo electronico:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el correo electronico " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">numero telefonico:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el numero telefonico " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Nacionalidad:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la Nacionalidad " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Dirrecion:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la Direccion " id="Nombre">
-										</div>
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<!-- Basic modal -->
-				<div id="modal_carreras" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">ID:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Descripcion:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la descripcion " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Grupo:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Grupo " id="Grupo">
-										</div>
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<!-- Basic modal -->
-				<div id="modal_maestros" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">ID:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Apellidos:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese los Apellidos " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Contraseña:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la Contraseña " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Genero:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el genero " id="Genero">
-										</div>
-										<label class="col-lg-3 col-form-label">Correo electronico:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el correo electronico " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Numero telefonico:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el numero telefonico " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Profesion:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la Profesion " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Contacto:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el contacto " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Carrera:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la carrera " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Materias a impartir:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese las materias a impartir " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Grupo:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Grupo " id="Grupo">
-										</div>
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<!-- Basic modal -->
-				<div id="modal_login" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Login</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Usuario:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Contraseña:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary" data-toggle="modal" data-target="#modal_delete">Aceptar</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<div id="modal_login2" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Login</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">Usuario:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Contraseña:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary"> <a href="../../../LTR/default/full/editarTutorias.php" class="nav-link active">Aceptar</a></button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<!-- Basic modal -->
-				<div id="modal_tutorias" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">ID:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre alumno:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Matricula:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la Matricula " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Carrera:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la carrera " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre maestro:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el nombre " id="Genero">
-										</div>
-										<label class="col-lg-3 col-form-label">Numero de empleado:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el numero de empleado " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Carrera:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la carrera telefonico " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Fecha:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="mm/dd/yyyy " id="Descripcion">
-										</div>
-										<label class="col-lg-3 col-form-label">Tema:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el tema " id="Grupo">
-										</div>
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<!-- Basic modal -->
-				<div id="modal_materia" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">ID:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Descripcion:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la descripcion " id="Nombre">
-										</div>
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-				<!-- Basic modal -->
-				<div id="modal_profesor" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Editar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-							<div class="modal-body">
-								<form action="#" method="post">
-									<div class="form-group row">
-										<label class="col-lg-3 col-form-label">ID:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la id " id="ID">
-										</div>
-										<label class="col-lg-3 col-form-label">Nombre:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese el Nombre " id="Nombre">
-										</div>
-										<label class="col-lg-3 col-form-label">Descripcion:</label>
-										<div class="col-lg-9">
-											<input type="text" class="form-control" placeholder="Ingrese la descripcion " id="Nombre">
-										</div>
-									</div>
-								</form>
-
-								
-							</div>
-
-							<div class="modal-footer">
-								<button type="button" class="btn btn-link" data-dismiss="modal">Close</button>
-								<button type="button" class="btn bg-primary">Save changes</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
-
-
-
-				<!-- Basic modal -->
-				<div id="modal_delete" class="modal fade" tabindex="-1">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title">Borrar</h5>
-								<button type="button" class="close" data-dismiss="modal">&times;</button>
-							</div>
-
-								<div class="modal-body">
-								<p>Se borro con exito la informacion selecionada</p>
-
-								<hr>
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- /basic modal -->
 
 		<!-- Main content -->
 		<div class="content-wrapper">
@@ -1682,7 +1268,7 @@
 			<div class="page-header page-header-light">
 				<div class="page-header-content header-elements-md-inline">
 					<div class="page-title d-flex">
-						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Datatables</span> - Basic</h4>
+						<h4><i class="icon-arrow-left52 mr-2"></i> <span class="font-weight-semibold">Form Layouts</span> - Horizontal</h4>
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
 					</div>
 
@@ -1699,8 +1285,8 @@
 					<div class="d-flex">
 						<div class="breadcrumb">
 							<a href="index2.php" class="breadcrumb-item"><i class="icon-home2 mr-2"></i> Home</a>
-							<a href="datatable_basic.html" class="breadcrumb-item">Datatables</a>
-							<span class="breadcrumb-item active">Basic</span>
+							<a href="form_layout_horizontal.php" class="breadcrumb-item">Form layouts</a>
+							<span class="breadcrumb-item active">Horizontal</span>
 						</div>
 
 						<a href="#" class="header-elements-toggle text-default d-md-none"><i class="icon-more"></i></a>
@@ -1734,131 +1320,672 @@
 			<!-- /page header -->
 
 
-		
+			<!-- Content area -->
+			<div class="content">
 
-			<!-- Pagination types -->
-				<div class="content">
+				<!-- Horizontal form options -->
+				<div class="row">
+					<div class="col-md-6">
 
-				<div class="card">
-					
-					<div style="overflow: auto;">
 
-					<table class="table datatable-pagination" width="100%">
-						<thead>
-							<center><h1>Tutorias</h1></center>
-							<tr>
-								<th>ID</th>
-								<th>Nombre alumno</th>
-								<th>Matricula</th>
-								<th>Carrera</th>
-								<th>Nombre maestro</th>
-								<th>Numero de empleado</th>
-								<th>Carrera</th>
-								<th>Fecha</th>
-								<th>Tema</th>
-								<th>estado</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Mario Carlos </td>
-								<td>136547</td>
-								<td>ITI</td>
-								<td>Mario Humberto</td>
-								<td>26</td>
-								<td>ITI</td>
-								<td>26/5/2017</td>
-								<td>Componentes de una computadora</td>
-								<td>completado</td>
-								<td class="text-center">
+
+						<!-- /basic layout -->
+
+						<!-- Static mode -->
+						<!-- >
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Static mode</h5>
+								<div class="header-elements">
 									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<li>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login2">editar </button></ul>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login">borrar </button></ul>
-												</li>
+							<div class="card-body">
+								<form action="#">
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Name:</label>
+										<div class="col-lg-9">
+											<div class="form-control-plaintext">Eugene Kopyov</div>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Password:</label>
+										<div class="col-lg-9">
+											<input type="password" class="form-control" readonly value="********">
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Your state:</label>
+										<div class="col-lg-9">
+											<select class="form-control form-control-select2" disabled data-fouc>
+												<optgroup label="Alaskan/Hawaiian Time Zone">
+													<option value="AK">Alaska</option>
+													<option value="HI">Hawaii</option>
+												</optgroup>
+												<optgroup label="Pacific Time Zone">
+													<option value="CA">California</option>
+													<option value="NV" selected>Nevada</option>
+													<option value="WA">Washington</option>
+												</optgroup>
+												<optgroup label="Mountain Time Zone">
+													<option value="AZ">Arizona</option>
+													<option value="CO">Colorado</option>
+													<option value="WY">Wyoming</option>
+												</optgroup>
+												<optgroup label="Central Time Zone">
+													<option value="AL">Alabama</option>
+													<option value="AR">Arkansas</option>
+													<option value="KY">Kentucky</option>
+												</optgroup>
+												<optgroup label="Eastern Time Zone">
+													<option value="CT">Connecticut</option>
+													<option value="DE">Delaware</option>
+													<option value="FL">Florida</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Gender:</label>
+										<div class="col-lg-9">
+											<div class="form-check form-check-inline disabled">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" name="gender" disabled checked data-fouc>
+													Male
+												</label>
+											</div>
+
+											<div class="form-check form-check-inline disabled">
+												<label class="form-check-label">
+													<input type="radio" class="form-input-styled" name="gender" disabled data-fouc>
+													Female
+												</label>
+											</div>	
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Your avatar:</label>
+										<div class="col-lg-9">
+											<div class="media mt-0">
+												<div class="mr-3">
+													<a href="#">
+														<img src="../../../../global_assets/images/placeholders/placeholder.jpg" width="60" height="60" class="rounded-round" alt="">
+													</a>
+												</div>
+
+												<div class="media-body">
+													<input type="file" class="form-input-styled" disabled data-fouc>
+													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+												</div>
 											</div>
 										</div>
 									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Juan Carlos </td>
-								<td>136545</td>
-								<td>ITI</td>
-								<td>Omar Jasso</td>
-								<td>25</td>
-								<td>ITI</td>
-								<td>24/4/2017</td>
-								<td>Ciclos</td>
-								<td>en proceso</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<li>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login2">editar </button></ul>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login">borrar </button></ul>
-												</li>
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Tags:</label>
+										<div class="col-lg-9">
+											<select multiple="multiple" disabled data-placeholder="Enter tags" class="form-control form-control-select2-icons" data-fouc>
+												<optgroup label="Services">
+													<option value="wordpress2" data-icon="wordpress2">Wordpress</option>
+													<option value="tumblr2" data-icon="tumblr2">Tumblr</option>
+													<option value="stumbleupon" data-icon="stumbleupon">Stumble upon</option>
+													<option value="pinterest2" data-icon="pinterest2">Pinterest</option>
+													<option value="lastfm2" data-icon="lastfm2">Lastfm</option>
+												</optgroup>
+												<optgroup label="File types">
+													<option value="pdf" data-icon="file-pdf">PDF</option>
+													<option value="word" data-icon="file-word">Word</option>
+													<option value="excel" data-icon="file-excel">Excel</option>
+													<option value="openoffice" data-icon="file-openoffice">Open office</option>
+												</optgroup>
+												<optgroup label="Browsers">
+													<option value="chrome" data-icon="chrome" selected>Chrome</option>
+													<option value="firefox" data-icon="firefox" selected>Firefox</option>
+													<option value="safari" data-icon="safari">Safari</option>
+													<option value="opera" data-icon="opera">Opera</option>
+													<option value="IE" data-icon="IE">IE</option>
+												</optgroup>
+											</select>
+										</div>
+									</div>
+
+									<div class="form-group row">
+										<label class="col-lg-3 col-form-label">Your message:</label>
+										<div class="col-lg-9">
+											<div class="form-control-plaintext">
+												<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
 											</div>
 										</div>
 									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Leonardo David </td>
-								<td>136534</td>
-								<td>ITI</td>
-								<td>Mario Humberto</td>
-								<td>26</td>
-								<td>ITI</td>
-								<td>27/5/2017</td>
-								<td>Word press</td>
-								<td>completado</td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
 
-											<div class="dropdown-menu dropdown-menu-right">
-												<li>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login2">editar </button></ul>
-												<ul><button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal_login">borrar </button></ul>
-												</li>
-											</div>
-										</div>
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
 									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
+								</form>
+							</div>
+						</div>
+						</-- >
+						<!-- /static mode -->
+
+					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-				<!-- /pagination types -->
+				<!-- /vertical form options -->
 
 
-				<!-- State saving -->
+
+				<!-- Centered forms -->
 				<!-- >
+				<div class="row">
+					<div class="col-md-6">
+						<div class="card">
+							<div class="card-header">
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<div class="header-elements-inline">
+											<h5 class="card-title">Centered form</h5>
+											<div class="header-elements">
+												<div class="list-icons">
+							                		<a class="list-icons-item" data-action="collapse"></a>
+							                		<a class="list-icons-item" data-action="reload"></a>
+							                		<a class="list-icons-item" data-action="remove"></a>
+							                	</div>
+						                	</div>
+					                	</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="row">
+									<div class="col-md-10 offset-md-1">
+										<form action="#">
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your name:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Eugene Kopyov">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Your strong password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Select your state:</label>
+												<div class="col-lg-9">
+													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="OR">Oregon</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="WY">Wyoming</option>
+														</optgroup>
+														<optgroup label="Central Time Zone">
+															<option value="AL">Alabama</option>
+															<option value="KS">Kansas</option>
+															<option value="KY">Kentucky</option>
+														</optgroup>
+														<optgroup label="Eastern Time Zone">
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="WV">West Virginia</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Attach screenshot:</label>
+												<div class="col-lg-9">
+													<input type="file" class="form-input-styled" data-fouc>
+													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your message:</label>
+												<div class="col-lg-9">
+													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+												</div>
+											</div>
+
+											<div class="text-right">
+												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-10 offset-md-1">
+								<div class="card">
+									<div class="card-header header-elements-inline">
+										<h5 class="card-title">Centered card</h5>
+										<div class="header-elements">
+											<div class="list-icons">
+						                		<a class="list-icons-item" data-action="collapse"></a>
+						                		<a class="list-icons-item" data-action="reload"></a>
+						                		<a class="list-icons-item" data-action="remove"></a>
+						                	</div>
+					                	</div>
+									</div>
+
+									<div class="card-body">
+										<form action="#">
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your name:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Eugene Kopyov">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Your strong password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Select your state:</label>
+												<div class="col-lg-9">
+													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="NV">Nevada</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="ID">Idaho</option>
+														</optgroup>
+														<optgroup label="Central Time Zone">
+															<option value="AL">Alabama</option>
+															<option value="IA">Iowa</option>
+															<option value="KS">Kansas</option>
+														</optgroup>
+														<optgroup label="Eastern Time Zone">
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="WV">West Virginia</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Attach screenshot:</label>
+												<div class="col-lg-9">
+													<input type="file" class="form-input-styled" data-fouc>
+													<span class="form-text text-muted">Accepted formats: gif, png, jpg. Max file size 2Mb</span>
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your message:</label>
+												<div class="col-lg-9">
+													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+												</div>
+											</div>
+
+											<div class="text-right">
+												<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</-- >
+				<!-- /form centered -->
+
+
+				<!-- Fieldset legend -->
+				<div class="row">
+					<div class="col-md-6">
+
+						<!-- Basic legend -->
+						<!-- >
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Basic legend</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<form action="#">
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">Enter your information</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Enter your name:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Eugene Kopyov">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Enter your password:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Your strong password">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Repeat password:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Repeat password">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Your message:</label>
+											<div class="col-lg-9">
+												<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+											</div>
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">Add personal details</legend>
+
+			                			<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Your country:</label>
+											<div class="col-lg-9">
+			                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
+			                                        <option value="USA">USA</option> 
+			                                        <option value="United Kingdom">United Kingdom</option> 
+			                                        <option value="...">...</option> 
+			                                        <option value="Australia">Australia</option> 
+			                                    </select>
+		                                    </div>
+			                			</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Select your state:</label>
+											<div class="col-lg-9">
+												<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+													<option></option>
+													<optgroup label="Alaskan/Hawaiian Time Zone">
+														<option value="AK">Alaska</option>
+														<option value="HI">Hawaii</option>
+													</optgroup>
+													<optgroup label="Pacific Time Zone">
+														<option value="CA">California</option>
+														<option value="NV">Nevada</option>
+														<option value="WA">Washington</option>
+													</optgroup>
+													<optgroup label="Mountain Time Zone">
+														<option value="AZ">Arizona</option>
+														<option value="CO">Colorado</option>
+														<option value="WY">Wyoming</option>
+													</optgroup>
+													<optgroup label="Central Time Zone">
+														<option value="AL">Alabama</option>
+														<option value="AR">Arkansas</option>
+														<option value="KY">Kentucky</option>
+													</optgroup>
+													<optgroup label="Eastern Time Zone">
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="FL">Florida</option>
+													</optgroup>
+												</select>
+											</div>
+										</div>
+
+			                			<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Gender:</label>
+											<div class="col-lg-9">
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
+														Male
+													</label>
+												</div>
+
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="radio" name="gender2" class="form-input-styled" data-fouc>
+														Female
+													</label>
+												</div>
+											</div>
+			                			</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Your CV:</label>
+											<div class="col-lg-9">
+												<input type="file" class="form-input-styled" data-fouc>
+												<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
+											</div>
+										</div>
+
+			                			<div class="form-group row">
+											<label class="col-lg-3 col-form-label">About yourself:</label>
+											<div class="col-lg-9">
+			                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
+		                                    </div>
+			                			</div>
+									</fieldset>
+
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						</-- >
+						<!-- /basic legend -->
+
+					</div>
+
+					<div class="col-md-6">
+
+						<!-- Advanced legend -->
+						<!-- >
+						<div class="card">
+							<div class="card-header header-elements-inline">
+								<h5 class="card-title">Advanced legend</h5>
+								<div class="header-elements">
+									<div class="list-icons">
+				                		<a class="list-icons-item" data-action="collapse"></a>
+				                		<a class="list-icons-item" data-action="reload"></a>
+				                		<a class="list-icons-item" data-action="remove"></a>
+				                	</div>
+			                	</div>
+							</div>
+
+							<div class="card-body">
+								<form action="#">
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">
+											<i class="icon-file-text2 mr-2"></i>
+											Enter your information
+											<a class="float-right text-default" data-toggle="collapse" data-target="#demo1">
+												<i class="icon-circle-down2"></i>
+											</a>
+										</legend>
+
+										<div class="collapse show" id="demo1">
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your name:</label>
+												<div class="col-lg-9">
+													<input type="text" class="form-control" placeholder="Eugene Kopyov">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Enter your password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Your strong password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Repeat password:</label>
+												<div class="col-lg-9">
+													<input type="password" class="form-control" placeholder="Repeat password">
+												</div>
+											</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your message:</label>
+												<div class="col-lg-9">
+													<textarea rows="5" cols="5" class="form-control" placeholder="Enter your message here"></textarea>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+
+									<fieldset>
+										<legend class="font-weight-semibold text-uppercase font-size-sm">
+											<i class="icon-reading mr-2"></i>
+											Add personal details
+											<a class="float-right text-default" data-toggle="collapse" data-target="#demo2">
+												<i class="icon-circle-down2"></i>
+											</a>
+										</legend>
+
+										<div class="collapse show" id="demo2">
+				                			<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your country:</label>
+												<div class="col-lg-9">
+				                                    <select data-placeholder="Select your country" class="form-control form-control-select2" data-fouc>
+				                                        <option value="USA">USA</option> 
+				                                        <option value="United Kingdom">United Kingdom</option> 
+				                                        <option value="...">...</option> 
+				                                        <option value="Australia">Australia</option> 
+				                                    </select>
+			                                    </div>
+				                			</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Select your state:</label>
+												<div class="col-lg-9">
+													<select data-placeholder="Select your state" class="form-control form-control-select2" data-fouc>
+														<option></option>
+														<optgroup label="Alaskan/Hawaiian Time Zone">
+															<option value="AK">Alaska</option>
+															<option value="HI">Hawaii</option>
+														</optgroup>
+														<optgroup label="Pacific Time Zone">
+															<option value="CA">California</option>
+															<option value="NV">Nevada</option>
+															<option value="WA">Washington</option>
+														</optgroup>
+														<optgroup label="Mountain Time Zone">
+															<option value="AZ">Arizona</option>
+															<option value="CO">Colorado</option>
+															<option value="WY">Wyoming</option>
+														</optgroup>
+														<optgroup label="Central Time Zone">
+															<option value="AL">Alabama</option>
+															<option value="AR">Arkansas</option>
+															<option value="KY">Kentucky</option>
+														</optgroup>
+														<optgroup label="Eastern Time Zone">
+															<option value="CT">Connecticut</option>
+															<option value="DE">Delaware</option>
+															<option value="FL">Florida</option>
+														</optgroup>
+													</select>
+												</div>
+											</div>
+
+				                			<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Gender:</label>
+												<div class="col-lg-9">
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="radio" name="gender2" class="form-input-styled" checked data-fouc>
+															Male
+														</label>
+													</div>
+
+													<div class="form-check form-check-inline">
+														<label class="form-check-label">
+															<input type="radio" name="gender2" class="form-input-styled" data-fouc>
+															Female
+														</label>
+													</div>
+												</div>
+				                			</div>
+
+											<div class="form-group row">
+												<label class="col-lg-3 col-form-label">Your CV:</label>
+												<div class="col-lg-9">
+													<input type="file" class="form-input-styled" data-fouc>
+													<span class="form-text text-muted">Accepted formats: pdf, doc. Max file size 2Mb</span>
+												</div>
+											</div>
+
+				                			<div class="form-group row">
+												<label class="col-lg-3 col-form-label">About yourself:</label>
+												<div class="col-lg-9">
+				                                    <textarea rows="5" cols="5" placeholder="Few words about yourself..." class="form-control"></textarea>
+			                                    </div>
+				                			</div>
+			                			</div>
+									</fieldset>
+
+									<div class="text-right">
+										<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+									</div>
+								</form>
+							</div>
+						</div>
+						</-- >
+						<!-- /a legend -->
+
+					</div>
+				</div>
+				<!-- /fieldset legend -->
+
+
+				<!-- 2 columns form -->
 				<div class="card">
 					<div class="card-header header-elements-inline">
-						<h5 class="card-title">State saving</h5>
+						<h5 class="card-title">Tutorias</h5>
 						<div class="header-elements">
 							<div class="list-icons">
 		                		<a class="list-icons-item" data-action="collapse"></a>
@@ -1869,723 +1996,85 @@
 					</div>
 
 					<div class="card-body">
-						DataTables has the option of being able to <code>save the state</code> of a table: its paging position, ordering state etc., so that is can be restored when the user reloads a page, or comes back to the page after visiting a sub-page. This state saving ability is enabled by the <code>stateSave</code> option. The <code>duration</code> for which the saved state is valid can be set using the <code>stateDuration</code> initialisation parameter (2 hours by default).
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6">
+									<fieldset>
+										<legend class="font-weight-semibold"><i class="icon-reading mr-2"></i>Alumno</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" class="form-control" placeholder="Introduce el nombre">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Matricula:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Introduce la matricual">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<input type="password" class="form-control" placeholder="Introduce la carrera">
+											</div>
+										</div>
+
+										
+									</fieldset>
+								</div>
+
+								<div class="col-md-6">
+									<fieldset>
+					                	<legend class="font-weight-semibold"><i class="icon-truck mr-2"></i>Maestro</legend>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Nombre:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Nombre completo" class="form-control">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">ID de empleado:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Introducir la id" class="form-control">
+											</div>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Carrera:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Introduzca la carrera" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Fecha:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="mm/dd/yyyy" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-lg-3 col-form-label">Tema:</label>
+											<div class="col-lg-9">
+												<input type="text" placeholder="Introduzca el tema" class="form-control">
+											</div>
+										</div>
+
+
+									</fieldset>
+								</div>
+							</div>
+
+							<div class="text-right">
+								<button type="submit" class="btn btn-primary">Submit form <i class="icon-paperplane ml-2"></i></button>
+							</div>
+						</form>
 					</div>
-
-					<table class="table datatable-save-state">
-						<thead>
-							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Marth</td>
-								<td><a href="#">Enright</a></td>
-								<td>Traffic Court Referee</td>
-								<td>22 Jun 1972</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td><a href="#">Airline Transport Pilot</a></td>
-								<td>3 Oct 1981</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>Business Services Sales Representative</td>
-								<td>19 Apr 1969</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
 				</div>
-				</-- >
-				<!-- /state saving -->
-
-
-				<!-- Scrollable datatable -->
-				<!-- >
-				<div class="card">
-					<div class="card-header header-elements-inline">
-						<h5 class="card-title">Scrollable datatable</h5>
-						<div class="header-elements">
-							<div class="list-icons">
-		                		<a class="list-icons-item" data-action="collapse"></a>
-		                		<a class="list-icons-item" data-action="reload"></a>
-		                		<a class="list-icons-item" data-action="remove"></a>
-		                	</div>
-	                	</div>
-					</div>
-
-					<div class="card-body">
-						This example shows the DataTables table body <code>scrolling</code> in the <code>vertical</code> direction. This can generally be seen as an alternative method to pagination for displaying a large table in a fairly small vertical area, and as such pagination has been disabled here. Note that this is not mandatory, it will work just fine with pagination enabled as well!.
-					</div>
-
-					<table class="table datatable-scroll-y" width="100%">
-						<thead>
-							<tr>
-								<th>First Name</th>
-								<th>Last Name</th>
-								<th>Job Title</th>
-								<th>DOB</th>
-								<th>Status</th>
-								<th class="text-center">Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Marth</td>
-								<td><a href="#">Enright</a></td>
-								<td>Traffic Court Referee</td>
-								<td>22 Jun 1972</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Jackelyn</td>
-								<td>Weible</td>
-								<td><a href="#">Airline Transport Pilot</a></td>
-								<td>3 Oct 1981</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Aura</td>
-								<td>Hard</td>
-								<td>Business Services Sales Representative</td>
-								<td>19 Apr 1969</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Nathalie</td>
-								<td><a href="#">Pretty</a></td>
-								<td>Drywall Stripper</td>
-								<td>13 Dec 1977</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sharan</td>
-								<td>Leland</td>
-								<td>Aviation Tactical Readiness Officer</td>
-								<td>30 Dec 1991</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxine</td>
-								<td><a href="#">Woldt</a></td>
-								<td><a href="#">Business Services Sales Representative</a></td>
-								<td>17 Oct 1987</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Sylvia</td>
-								<td><a href="#">Mcgaughy</a></td>
-								<td>Hemodialysis Technician</td>
-								<td>11 Nov 1983</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Lizzee</td>
-								<td><a href="#">Goodlow</a></td>
-								<td>Technical Services Librarian</td>
-								<td>1 Nov 1961</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Kennedy</td>
-								<td>Haley</td>
-								<td>Senior Marketing Designer</td>
-								<td>18 Dec 1960</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Chantal</td>
-								<td><a href="#">Nailor</a></td>
-								<td>Technical Services Librarian</td>
-								<td>10 Jan 1980</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Delma</td>
-								<td>Bonds</td>
-								<td>Lead Brand Manager</td>
-								<td>21 Dec 1968</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Roland</td>
-								<td>Salmos</td>
-								<td><a href="#">Senior Program Developer</a></td>
-								<td>5 Jun 1986</td>
-								<td><span class="badge badge-secondary">Inactive</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Coy</td>
-								<td>Wollard</td>
-								<td>Customer Service Operator</td>
-								<td>12 Oct 1982</td>
-								<td><span class="badge badge-success">Active</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Maxwell</td>
-								<td>Maben</td>
-								<td>Regional Representative</td>
-								<td>25 Feb 1988</td>
-								<td><span class="badge badge-danger">Suspended</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>Cicely</td>
-								<td>Sigler</td>
-								<td><a href="#">Senior Research Officer</a></td>
-								<td>15 Mar 1960</td>
-								<td><span class="badge badge-info">Pending</span></td>
-								<td class="text-center">
-									<div class="list-icons">
-										<div class="dropdown">
-											<a href="#" class="list-icons-item" data-toggle="dropdown">
-												<i class="icon-menu9"></i>
-											</a>
-
-											<div class="dropdown-menu dropdown-menu-right">
-												<a href="#" class="dropdown-item"><i class="icon-file-pdf"></i> Export to .pdf</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-excel"></i> Export to .csv</a>
-												<a href="#" class="dropdown-item"><i class="icon-file-word"></i> Export to .doc</a>
-											</div>
-										</div>
-									</div>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-				</-- >
-				<!-- /scrollable datatable -->
+				<!-- /2 columns form -->
 
 			</div>
 			<!-- /content area -->
